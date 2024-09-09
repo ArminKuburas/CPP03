@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 19:22:22 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 19:25:47 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/09 19:30:33 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,13 @@ int	main(void)
 	c.beRepaired(5);
 	c.beRepaired(5);
 	c.beRepaired(5);
+	c.beRepaired(5);
 	d.attack("Clap my Trap");
 	a.takeDamage(5);
 	d.attack("Clap my Trap");
 	a.takeDamage(5);
 	d.attack("Clap my Trap");
 	a.takeDamage(5);
+	a.attack("Clap Whos Trap?");
 	return (0);
 }
