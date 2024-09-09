@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:26:32 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 20:32:09 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/09 20:40:36 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ DiamondTrap::DiamondTrap(const std::string& name) : ClapTrap(name + "_clap_name"
 	std::cout << "\033[1;36mDiamondTrap " << this->_name << " has been created!\033[0m" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap& source) : ClapTrap(source.ClapTrap::_name), ScavTrap(source), FragTrap(source)
+DiamondTrap::DiamondTrap(const DiamondTrap& source) : ClapTrap(source), ScavTrap(source), FragTrap(source)
 {
 	this->_name = source._name;
 	std::cout << "\033[1;36mDiamondTrap " << this->_name << " has been copied!\033[0m" << std::endl;
@@ -37,7 +37,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 	if (this != &other)
 	{
 		std::cout << "\033[1;36mDiamondTrap " << this->_name << " is now " << other._name << "\033[0m" << std::endl;
-		this.ClapTrap::_name = other.ClapTrap::_name;
+		this->ClapTrap::_name = other.ClapTrap::_name;
 		this->_name = other._name;
 		this->_hitpoints = other._hitpoints;
 		this->_energyPoints = other._energyPoints;
