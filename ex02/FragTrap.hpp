@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/09 20:12:36 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 20:13:56 by akuburas         ###   ########.fr       */
+/*   Created: 2024/09/09 20:07:34 by akuburas          #+#    #+#             */
+/*   Updated: 2024/09/09 20:08:40 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
-int	main(void)
+# include "ClapTrap.hpp"
+
+class FragTrap : public ClapTrap
 {
-	FragTrap a("Man I got Frags");
-	FragTrap b("Fragger");
-	FragTrap c(a);
-	FragTrap d("FragTrap");
-	ScavTrap e("ScavTrap");
+	public:
+		FragTrap(const std::string& name);
+		FragTrap(const FragTrap& source);
+		~FragTrap();
+		FragTrap& operator=(const FragTrap& other);
 
-	d = b;
+		void	highFivesGuys(void);
+};
 
-	a.attack("Fragger");
-	b.takeDamage(5);
-	c.beRepaired(5);
-	d.highFivesGuys();
-	e.attack("Fragger");
-}
+#endif

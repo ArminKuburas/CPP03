@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/09 20:12:36 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 20:13:56 by akuburas         ###   ########.fr       */
+/*   Created: 2024/09/09 19:45:46 by akuburas          #+#    #+#             */
+/*   Updated: 2024/09/09 19:46:06 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
-int	main(void)
+#include "ClapTrap.hpp"
+
+class ScavTrap : public ClapTrap
 {
-	FragTrap a("Man I got Frags");
-	FragTrap b("Fragger");
-	FragTrap c(a);
-	FragTrap d("FragTrap");
-	ScavTrap e("ScavTrap");
+	public:
+		ScavTrap(const std::string& name);
+		ScavTrap(const ScavTrap& source);
+		~ScavTrap();
+		ScavTrap& operator=(const ScavTrap& other);
 
-	d = b;
+		void	attack(const std::string& target);
+		void	guardGate(void);
+};
 
-	a.attack("Fragger");
-	b.takeDamage(5);
-	c.beRepaired(5);
-	d.highFivesGuys();
-	e.attack("Fragger");
-}
+#endif
