@@ -6,14 +6,14 @@
 #    By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/09 20:06:46 by akuburas          #+#    #+#              #
-#    Updated: 2024/09/09 20:13:33 by akuburas         ###   ########.fr        #
+#    Updated: 2024/09/09 20:14:33 by akuburas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = exercise01
+NAME = exercise02
 
 SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
