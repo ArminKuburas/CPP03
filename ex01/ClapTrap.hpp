@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 19:08:45 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 19:34:47 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/10 22:27:46 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class	ClapTrap
 {
 	public:
+		ClapTrap();
 		ClapTrap(const std::string& name);
 		ClapTrap(const ClapTrap& source);
 		~ClapTrap();

@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:07:34 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 20:40:11 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/10 22:32:05 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 class FragTrap : virtual public ClapTrap
 {
 	public:
+		FragTrap();
 		FragTrap(const std::string& name);
 		FragTrap(const FragTrap& source);
 		~FragTrap();

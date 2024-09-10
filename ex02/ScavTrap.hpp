@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 19:45:46 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 19:46:06 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/10 22:29:33 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 class ScavTrap : public ClapTrap
 {
 	public:
+		ScavTrap();
 		ScavTrap(const std::string& name);
 		ScavTrap(const ScavTrap& source);
 		~ScavTrap();
