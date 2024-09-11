@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:26:32 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/10 22:33:15 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/11 13:35:18 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 DiamondTrap::DiamondTrap() : ClapTrap(), ScavTrap(), FragTrap()
 {
-	this->_name = "ClapTrap";
+	this->_name = "DiamondTrap";
 	this->ClapTrap::_name = this->_name + "_clap_name";
 	this->_hitpoints = this->FragTrap::_hitpoints;
 	this->_energyPoints = this->ScavTrap::_energyPoints;
