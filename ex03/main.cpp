@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:41:13 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/11 13:45:45 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/12 13:14:09 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,18 @@ int	main(void)
 		a.takeDamage(100);
 		a.attack("Clap my Trap");
 		a.beRepaired(100);
+		a.guardGate();
+		a.highFivesGuys();
+		a.whoAmI();
 		
+	}
+	{
+		DiamondTrap original;
+		DiamondTrap pappy(original);
+
+		pappy.guardGate();
+		pappy.takeDamage(10);
+		pappy.whoAmI();
 	}
 	return (0);
 }

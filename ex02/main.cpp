@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:12:36 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/09 20:13:56 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/12 13:06:59 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int	main(void)
 	FragTrap c(a);
 	FragTrap d("FragTrap");
 	ScavTrap e("ScavTrap");
+	FragTrap f;
 
 	d = b;
 
