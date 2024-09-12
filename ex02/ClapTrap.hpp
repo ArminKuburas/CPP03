@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 19:08:45 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/10 22:29:38 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/12 13:32:55 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ class	ClapTrap
 		void	beRepaired(unsigned int amount);
 	protected:
 		std::string	_name;
-		unsigned int	_hitpoints;
-		unsigned int	_energyPoints;
-		unsigned int	_attackDamage;
+		 int	_hitpoints;
+		 int	_energyPoints;
+		 int	_attackDamage;
 };
 
 #endif

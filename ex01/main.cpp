@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 19:50:26 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/12 13:05:44 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/12 13:28:00 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	main(void)
 	a.attack("Scavenger");
 	b.takeDamage(5);
 	c.beRepaired(5);
+	b.takeDamage(100);
+	b.guardGate();
 	d.ClapTrap::attack("Enemy");
 	e.guardGate();
 }

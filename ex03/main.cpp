@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:41:13 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/12 13:14:09 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/12 16:42:00 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int	main(void)
 		a.guardGate();
 		a.whoAmI();
 	}
+	std::cout << std::endl;
 	{
 		DiamondTrap a("DiamondTrap");
 		DiamondTrap b("DiamondTrap2");
@@ -31,6 +32,7 @@ int	main(void)
 		a = b;
 		a.whoAmI();
 	}
+	std::cout << std::endl;
 	{
 		DiamondTrap a("Diamond In Da Trap");
 		
@@ -42,6 +44,7 @@ int	main(void)
 		a.whoAmI();
 		
 	}
+	std::cout << std::endl;
 	{
 		DiamondTrap original;
 		DiamondTrap pappy(original);

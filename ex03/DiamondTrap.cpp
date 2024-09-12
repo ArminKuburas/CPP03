@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:26:32 by akuburas          #+#    #+#             */
-/*   Updated: 2024/09/12 13:11:33 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/09/12 16:41:14 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 void DiamondTrap::whoAmI(void)
 {
 
-	if (this->_energyPoints < 1 || this->_hitpoints)
+	if (this->_energyPoints < 1 || this->_hitpoints < 1)
 		std::cout << "\033[1;36mDiamondTrap " << this->_name << " is out of hitpoints or energy points " << "\033[0m" << std::endl;
 	else
 		std::cout << "\033[1;36mDiamondTrap " << this->_name << " is also known as " << this->ClapTrap::_name << "\033[0m" << std::endl;
